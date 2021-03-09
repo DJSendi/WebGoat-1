@@ -120,7 +120,14 @@
 
         <!-- This build number will be ubdated by Travis-CI -->
         <build.number>build</build.number>
-
+        <!--WebGoat --> 
+	<sonar.projectKey>DJSendi_WebGoat-1</sonar.projectKey>
+        <sonar.organization>djsendi</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	<sonar.moduleKey>${project.groupId}:${project.artifactId}
+        </sonar.moduleKey>
+        <skipTests>true</skipTests>    
+	    
         <!-- Shared properties with plugins and version numbers across submodules-->
         <activation.version>1.1.1</activation.version>
         <commons-collections.version>3.2.1</commons-collections.version>
